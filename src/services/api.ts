@@ -3,10 +3,6 @@ import Status from "../models/status";
 const root: string = `http://${window.location.hostname}`;
 
 export default class Api {
-    static fuck(): void {
-        console.log("fuck");
-    }
-
     async getStatus(): Promise<Status> {
         const res = await fetch(`${root}/api/status`);
         this.checkResponse(res);

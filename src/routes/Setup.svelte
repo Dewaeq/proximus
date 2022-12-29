@@ -40,7 +40,7 @@
         </div>
     </div>
 
-    <button class="btn">Connect</button>
+    <button class="btn" on:click={connect}>Connect</button>
     {#if isConnecting}
         <Warning
             text="Station will now restart and try to establish a connection. See the
